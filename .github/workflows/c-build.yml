@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make -C miniproject/implementation/
-    - name: make check
-      run: make check
+    - name: make all
+      run: make all -C miniproject/implementation/
     - name: make distcheck
       run: make distcheck
